@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Cutive+Mono|Kirang+Haerang');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+
+
+
+.red{
+    background-color: red;
+
+}
+
+.blue{
+    background-color: blue;
+     min-height: 50px;
+}
+.green{
+    background-color: green;
+    min-height:50px;
+}
+
+
+.orange{
+    background-color: orange;
+     min-height: 50px;
+}
+/*-------------Page background brickwall-----------*/
+body {
+    background-image: url("../images/wall.png");
+    background-repeat: repeat;
+
+}
+
+/*-----------Page title and clock------------------*/
+
+.header{
+    display: block;
+    margin-top: 20px;
+ 
+}
+
+.clock{
+    display: block;
+    float: right;
+    padding: 5px;
+    margin-top:10px;
+}
+
+/*-------------------Main Page-------------------*/
+
+.printer{
+    display: block;
+    margin: auto;
+    width:100%;
+    padding: 0;
+    margin-top:0;
+    max-height: 500px;
+}
+
+.action-button{
+    display: block;
+    margin: auto;
+    height: 80px;
+    width: 180px;
+    margin-top:50px;
+    border-radius: 5%;
+    font-size: 2em;
+     box-shadow: 2px 2px #888888;
+}
+
+/*-------------------Advice Slip-------------------*/
+
+h2 {
+    text-transform: uppercase;
+    font-size: 1.5em;
+    margin-top: 5px;
+
+}
+
+.wrapper {
+
+    min-height: 200px;
+    width: 250px;
+    margin: auto;
+    padding-left: 0;
+    position: relative;
+
+}
+
+.message {
+    box-shadow: 2px 2px #888888;
+    font-size: 1em;
+    text-align: center;
+    bottom: 0;
+    vertical-align: bottom;
+    position:absolute;
+    width: 250px;
+    padding:3px;
+    background-color: #ffffff;
+    background-image: url("../images/lined_paper.jpg");
+    background-repeat: repeat;
+    font-family: 'Cutive Mono', monospace;
+}
+
+/*--span message tear change cursor*/
+
+#tear{
+    cursor: pointer;
+}
+
+
+
+
+/*--Media rule to switch button types*/
+
+@media screen and (min-width: 992px) {
+  .action-button {
+    border-radius: 50%;
+     height: 100px;
+    width: 100px;
+  }
+}
+
