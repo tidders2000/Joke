@@ -1,7 +1,7 @@
 function sendMail(contactform) {
 
 
-
+// send data to js email
     emailjs.send("gmail", "advice", {
             "from_name": contactform.name.value,
             "send_email": contactform.emailaddress.value,

@@ -118,10 +118,11 @@ h2 {
     margin-top: 10px;
 }
 
-
-.confirm{
-    display: none;
+#resetform{
+   margin: auto;
+    display: block; 
 }
+
 
 /*--Media rule to switch button types*/
 
