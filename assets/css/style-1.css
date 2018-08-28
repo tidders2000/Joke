@@ -106,8 +106,22 @@ h2 {
     cursor: pointer;
 }
 
+/*--e mail form-------------------*/
+
+.form-control{
+    margin-top: 10px;
+}
+
+.center-form button {
+    margin: auto;
+    display: block;
+    margin-top: 10px;
+}
 
 
+.confirm{
+    display: none;
+}
 
 /*--Media rule to switch button types*/
 

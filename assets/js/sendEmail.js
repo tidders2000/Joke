@@ -1,18 +1,29 @@
 function sendMail(contactform) {
 
-    emailjs.send("gmail", "resume", {
-        "from_name": contactform.name.value,
-        "from_email": contactform.emailaddress.value, 
-        "project_request": contactform.projectsummary.value
-    })
+
+
+    emailjs.send("gmail", "advice", {
+            "from_name": contactform.name.value,
+            "send_email": contactform.emailaddress.value,
+            "to_name": contactform.toname.value,
+              "free_advice": contactform.freeadvice.value
+        })
+
+        .then(
+            function(response) {
+               alert(" Mail Sent", response);
+              
+            },
+            function(error) {
+                alert("Failed to Send", error);
+            }
+        );
     
- .then(
-        function(response) {
-            console.log("SUCCESS", response);
-        },
-        function(error) {
-            console.log("FAILED", error);
-        }
-    );
-    return false;  // To block from loading a new page
+ 
+ 
+    return false; // To block from loading a new page
+    
+
+    
 }
+

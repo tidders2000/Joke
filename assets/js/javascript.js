@@ -11,34 +11,45 @@ $(document).ready(function() {
 
     })
 
-    $.getJSON("http://api.adviceslip.com/advice", function(json) {
+     
+    
+    var url="http://api.adviceslip.com/advice"
 
-        var x = json.slip.advice
+    $.getJSON(url,null,function(json) {
+        
+         var x = json.slip.advice 
+    
+    $('<div id="json"></div>').appendTo('#message')
 
-        $('<div id="json"></div>').appendTo('#message')
+    document.getElementById("json").innerHTML += x + '<div id ="tear"><span id="rip"><br><br>-----click to tear-----</span></div>';
+document.getElementById("freeadvice").innerHTML += x
+})
 
-        document.getElementById("json").innerHTML += x + '<div id ="tear"><span id="rip"><br><br>-----click to tear-----</span></div>';
-
-    })
-
-    $('#message').click(function() {
+$('#message').click(function() {
 
 
-        $("#message").toggle("explode");
+    $("#message").toggle("explode");
 
 
+    location.reload();
+
+
+});
+
+$('.action-button').tooltip({
+
+    classes: {
+        "ui-tooltip": "highlight"
+    }
+});
+
+$('#resetform').click(function(){
+    
+        $("#form")[0].reset()
         location.reload();
+    
+})
 
 
-    });
-
-    $('.action-button').tooltip({
-
-        classes: {
-            "ui-tooltip": "highlight"
-        }
-    });
-
-   
 
 });
