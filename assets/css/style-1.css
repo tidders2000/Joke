@@ -58,12 +58,15 @@ body {
 .action-button{
     display: block;
     margin: auto;
+
+    color:  black;
+    border-color: black;
     height: 80px;
     width: 180px;
     margin-top:50px;
     border-radius: 5%;
     font-size: 2em;
-     box-shadow: 2px 2px #888888;
+     box-shadow: 2px 2px # #FFCC00;
 }
 
 /*-------------------Advice Slip-------------------*/

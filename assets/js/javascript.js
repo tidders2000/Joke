@@ -12,15 +12,15 @@ $(document).ready(function() {
 
     })
 
- // Get advice slip from api   
+ // Get random joke from api   
 
-    var url = "http://api.adviceslip.com/advice"
+    var url = "https://icanhazdadjoke.com/"
 
-    $.getJSON(url, null, function(json) {
+    $.getJSON(url, null, function(data) {
 
-    var x = json.slip.advice
+    var x = data.joke
 
- // Add div to message and add advice to it
+ // Add div to message and add joke to it
 
     $('<div id="json"></div>').appendTo('#message');
 
